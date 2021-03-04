@@ -1,9 +1,3 @@
-
-import '../core/topbar/header.scss'
-import '../core/wave-effects/wave-effects.scss'
-import '../core/sidebar/sidebar.scss'
-import '../core/breadcrumb/breadcrumb.scss'
-import '../core/buttons/buttons.scss'
 import '../Admin.css'
 import SearchIcon from '@material-ui/icons/Search';
 import CloseIcon from '@material-ui/icons/Close';
@@ -49,12 +43,11 @@ const Navbars = () => {
                             </form>
                         </li>
                     </ul>
-                    <ul className="navbar-nav float-end">
-                        <li className="nav-item dropdown">
-                           
+                    <ul className="navbar-nav ml-auto">
+                        <li className="nav-item ">
                             <Dropdown>
-                                    <Dropdown.Toggle className="text-dark bg-dark border border-0 borderDropdown float-end  ">
-                                        <img src="images/users/1.jpg" alt="users" className="rounded-circle" width="40"/>
+                                    <Dropdown.Toggle className="text-muted bg-dark border border-0 pro-pic">
+                                        <img src="images/users/1.jpg" alt="users" className="rounded-circle mr-auto" width="40"/>
                                     </Dropdown.Toggle>
                                     <Dropdown.Menu>
                                         <Dropdown.Item href="javascript:void(0)">

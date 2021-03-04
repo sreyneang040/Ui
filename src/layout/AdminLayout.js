@@ -7,7 +7,7 @@ import Breadcrumbs  from '../dashboard/Breadcrumbs'
 import Footer from '../dashboard/Footer'
 const AdminLayout = () => {
     return (
-       <>
+       <div className="bg-admin">
         <Navbar />
         <Breadcrumbs />
         <Sidebar />
@@ -15,7 +15,8 @@ const AdminLayout = () => {
         <TopSellingProduct />
         <RecentCommentAndTempGuide />
         <Footer />
-       </>
+    
+       </div>
     )
 }
 

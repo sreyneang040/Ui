@@ -1,4 +1,4 @@
-import '../widgets/steamline.scss'
+
 
 const Table = () => {
     return (

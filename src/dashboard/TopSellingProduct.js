@@ -1,9 +1,5 @@
-import {Col, Row,Container, Badge} from 'react-bootstrap'
-import '../core/topbar/header.scss'
-import '../core/wave-effects/wave-effects.scss'
-import '../core/sidebar/sidebar.scss'
-import '../core/breadcrumb/breadcrumb.scss'
-import '../core/buttons/buttons.scss'
+import React from 'react'
+import {Col, Row,Container} from 'react-bootstrap'
 function TopSellingProduct() {
     return (
         <div className ="mt-3">
@@ -11,16 +7,16 @@ function TopSellingProduct() {
         <Row>
             <Col lg ={2}></Col>
                     <Col lg ={10}>
-                        <div className="card">
-                            <div className="card-body">
-                                <div className="d-md-flex">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-md-flex">
                                     <div>
-                                        <h4 className="card-title">Top Selling Products</h4>
-                                        <h5 className="card-subtitle">Overview of Top Selling Items</h5>
+                                        <h4 class="card-title">Top Selling Products</h4>
+                                        <h5 class="card-subtitle">Overview of Top Selling Items</h5>
                                     </div>
-                                    <div className="ms-auto ml-auto">
-                                        <div className="dl">
-                                            <select className="form-select shadow-none">
+                                    <div class="ml-auto">
+                                        <div class="dl">
+                                            <select class="form-select shadow-none">
                                                 <option value="0" selected>Monthly</option>
                                                 <option value="1">Daily</option>
                                                 <option value="2">Weekly</option>
@@ -30,110 +26,106 @@ function TopSellingProduct() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="table-responsive">
-                                <table className="table v-middle">
+                            <div class="table-responsive">
+                                <table class="table v-middle">
                                     <thead>
-                                        <tr className="bg-light">
-                                            <th className="border-top-0">Products</th>
-                                            <th className="border-top-0">License</th>
-                                            <th className="border-top-0">Support Agent</th>
-                                            <th className="border-top-0">Technology</th>
-                                            <th className="border-top-0">Tickets</th>
-                                            <th className="border-top-0">Sales</th>
-                                            <th className="border-top-0">Earnings</th>
+                                        <tr class="bg-light">
+                                            <th class="border-top-0">Products</th>
+                                            <th class="border-top-0">License</th>
+                                            <th class="border-top-0">Support Agent</th>
+                                            <th class="border-top-0">Technology</th>
+                                            <th class="border-top-0">Tickets</th>
+                                            <th class="border-top-0">Sales</th>
+                                            <th class="border-top-0">Earnings</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td>
-                                                <div className="d-flex align-items-center">
-                                                    <div className="m-r-10"><a
-                                                            className="btn btn-circle d-flex btn-info text-white">EA</a>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="m-r-10"><a
+                                                            class="btn btn-circle d-flex btn-info text-white ">EA</a>
                                                     </div>
-                                                    <div className="">
-                                                        <h4 className="m-b-0 font-16">Elite Admin</h4>
+                                                    <div class="">
+                                                        <h4 class="m-b-0 font-16 ml-2">Elite Admin</h4>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td>Single Use</td>
                                             <td>John Doe</td>
                                             <td>
-                                            <Badge variant="danger">Angular</Badge>
-
+                                                <label class="label bg-danger text-white p-1">Angular</label>
                                             </td>
                                             <td>46</td>
                                             <td>356</td>
                                             <td>
-                                                <h5 className="m-b-0">$2850.06</h5>
+                                                <h5 class="m-b-0">$2850.06</h5>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <div className="d-flex align-items-center">
-                                                    <div className="m-r-10"><a
-                                                            className="btn btn-circle d-flex bg-warning text-white">MA</a>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="m-r-10"><a
+                                                            class="btn btn-circle d-flex bg-warning text-white">MA</a>
                                                     </div>
-                                                    <div className="">
-                                                        <h4 className="m-b-0 font-16">Monster Admin</h4>
+                                                    <div class="">
+                                                        <h4 class="m-b-0 font-16 ml-2">Monster Admin</h4>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td>Single Use</td>
                                             <td>Venessa Fern</td>
                                             <td>
-                                            <Badge variant="primary">Vue Js</Badge>
-
+                                                <label class="label label-info">Vue Js</label>
                                             </td>
                                             <td>46</td>
                                             <td>356</td>
                                             <td>
-                                                <h5 className="m-b-0">$2850.06</h5>
+                                                <h5 class="m-b-0">$2850.06</h5>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <div className="d-flex align-items-center">
-                                                    <div className="m-r-10"><a
-                                                            className="btn btn-circle d-flex btn-success text-white">MP</a>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="m-r-10"><a
+                                                            class="btn btn-circle d-flex btn-success text-white">MP</a>
                                                     </div>
-                                                    <div className="">
-                                                        <h4 className="m-b-0 font-16">Material Pro Admin</h4>
+                                                    <div class="">
+                                                        <h4 class="m-b-0 font-16 ml-2">Material Pro Admin</h4>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td>Single Use</td>
                                             <td>John Doe</td>
                                             <td>
-                                            <Badge variant="success">Bootstrap</Badge>
-
+                                                <label class="label label-success">Bootstrap</label>
                                             </td>
                                             <td>46</td>
                                             <td>356</td>
                                             <td>
-                                                <h5 className="m-b-0">$2850.06</h5>
+                                                <h5 class="m-b-0">$2850.06</h5>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <div className="d-flex align-items-center">
-                                                    <div className="m-r-10"><a
-                                                            className="btn btn-circle d-flex text-white" style= {{backgroundColor:'purple'}}>AA</a>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="m-r-10"><a
+                                                            class="btn btn-circle d-flex text-white" style= {{backgroundColor:'purple'}}>AA</a>
                                                     </div>
-                                                    <div className="">
-                                                        <h4 className="m-b-0 font-16">Ample Admin</h4>
+                                                    <div class="">
+                                                        <h4 class="m-b-0 font-16 ">Ample Admin</h4>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td>Single Use</td>
                                             <td>John Doe</td>
                                             <td>
-                                            <Badge variant="info">React</Badge>
-
+                                                <label class="label label-purple">React</label>
                                             </td>
                                             <td>46</td>
                                             <td>356</td>
                                             <td>
-                                                <h5 className="m-b-0">$2850.06</h5>
+                                                <h5 class="m-b-0">$2850.06</h5>
                                             </td>
                                         </tr>
                                     </tbody>

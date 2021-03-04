@@ -1,9 +1,3 @@
-import '../Sidebar.scss'
-import '../core/topbar/header.scss'
-import '../core/wave-effects/wave-effects.scss'
-import '../core/sidebar/sidebar.scss'
-import '../core/breadcrumb/breadcrumb.scss'
-import '../core/buttons/buttons.scss'
 import DashboardIcon from "@material-ui/icons/Dashboard";
 import PersonOutlineIcon from "@material-ui/icons/PersonOutline";
 import BorderAllIcon from "@material-ui/icons/BorderAll";
@@ -16,6 +10,7 @@ import SettingsIcon from '@material-ui/icons/Settings';
 import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
 import LocalHospitalIcon from '@material-ui/icons/LocalHospital';
 import { Dropdown } from "react-bootstrap";
+import '../Combine.scss'
 function Sidebar() {
     return (
         <aside className="left-sidebar" data-sidebarbg="skin6">
@@ -58,9 +53,9 @@ function Sidebar() {
                         </li>
                         <li className="p-15 m-t-10">
                             <a href="javascript:void(0)"
-                                className="btn create-btn text-white   ml-2">
+                                className="btn create-btn text-white">
                                 <LocalHospitalIcon />{" "}
-                                <span className="hide-menu m-l-5 ml-auto">Create New</span>{" "}
+                                <span className="hide-menu m-l-5">Create New</span>{" "}
                             </a>
                         </li>
                         <li className="sidebar-item">

@@ -1,7 +1,7 @@
 /*******************
 Padding margin property 
 *******************/
-@import '../variable.scss';
+
 $vertical-property-map: ( m-t-: margin-top, m-b-: margin-bottom, m-r-: margin-right, m-l-: margin-left, p-t-: padding-top, p-b-: padding-bottom, p-r-: padding-right, p-l-: padding-left, p-: padding, m-:margin);
 $sizes-list: 5 10 15 20 25 30 40;
 @each $size in $sizes-list {

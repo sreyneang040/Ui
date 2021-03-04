@@ -5,12 +5,6 @@ import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
 import StorageIcon from '@material-ui/icons/Storage';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
-import '../widgets/widgets.scss'
-import '../core/topbar/header.scss'
-import '../core/wave-effects/wave-effects.scss'
-import '../core/sidebar/sidebar.scss'
-import '../core/breadcrumb/breadcrumb.scss'
-import '../core/buttons/buttons.scss'
 
 function SaleSummaryAndFeed() {
     return (

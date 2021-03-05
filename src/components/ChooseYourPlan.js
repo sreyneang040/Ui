@@ -5,7 +5,7 @@ const chooseYourPlan = () => {
     return (
         <div className="rounded text-center" style={{ backgroundColor: "#fdfdfd" }} >
             <Container className="mt-5" >
-                <div className="mt-5 text-center" >
+                <div className="mt-5 text-center">
                     <h3> Choose Your Plan </h3>
                     <p> Let 's choose the package that is best for you and explore ithappily andcheerfully.</p>
                 </div>

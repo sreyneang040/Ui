@@ -1,4 +1,5 @@
-@import "./variable.scss"; // Sidebar
+// Sidebar
+@import "../../variable.scss";
 $sidebar-link-padding:14px 15px;
 $sidebar-icon-size:23px;
 $sidebar-first-level-padding:0 0 10px 0;
@@ -11,40 +12,33 @@ Main sidebar
 
 .left-sidebar {
     position: absolute;
-    width: 16%;
+    width: $sidebar-width-full;
     height: 100%;
     top: 0px;
+    
     z-index: 10;
     padding-top: 64px;
-    background: white;
+    background: $sidebar;
     box-shadow: $shadow;
-    // color: $dark;
 }
-
 
 /*******************
 sidebar navigation
 ******************/
-
 .scroll-sidebar {
     height: calc(100% - 20px);
     position: relative;
 }
 
-//upgradeToPro 
-.upgradeToPro {
-    width: 90%;
-}
-
 .sidebar-nav {
     ul {
-        .sidebar-item {
-            width: $sidebar-width-full;
-            .sidebar-link {
-                color: $dark;
-                padding: $sidebar-link-padding;
+       .sidebar-item {
+           width: $sidebar-width-full;
+           .sidebar-link {
+                color: $sidebar-text;
+                padding:$sidebar-link-padding;
                 display: flex;
-                white-space: nowrap;
+                white-space: nowrap; 
                 align-items: center;
                 line-height: 25px;
                 opacity: 0.6;
@@ -62,22 +56,22 @@ sidebar navigation
                     opacity: 1;
                 }
             }
-            &.selected>.sidebar-link {
-                background: rgba(0, 0, 0, 0.04);
-                opacity: 1;
-            }
-            /*******************
+           &.selected > .sidebar-link{
+               /*background: rgba(0, 0, 0, 0.04);*/
+               opacity: 1;
+           }
+           /*******************
            First level
            ******************/
-            .first-level {
+           .first-level {
                 padding: $sidebar-first-level-padding;
-                .sidebar-item.active .sidebar-link {
-                    opacity: 1;
-                }
+               .sidebar-item.active .sidebar-link{
+                   opacity: 1;
+               }
                 .sidebar-item .sidebar-link {
                     padding: $sidebar-first-level-link-padding;
-                    i {
-                        font-size: $sidebar-first-level-icon-size;
+                    i{
+                        font-size:$sidebar-first-level-icon-size;
                     }
                 }
             }
@@ -87,7 +81,7 @@ sidebar navigation
          ******************/
         .nav-small-cap {
             font-size: 12px;
-            padding: $sidebar-link-padding;
+            padding:$sidebar-link-padding;
             white-space: nowrap;
             display: flex;
             align-items: center;
@@ -95,21 +89,17 @@ sidebar navigation
             margin-top: 10px;
             color: $sidebar-text;
             opacity: 0.3;
-            text-transform: uppercase;
-            i {
-                line-height: 30px;
-                margin: 0 5px;
-            }
+            text-transform: uppercase; i{line-height: 30px; margin:0 5px;}
         }
     }
+    >#sidebarnav >.sidebar-item >.sidebar-link:hover{
+        /*background: rgba(0, 0, 0, 0.04);*/
+    }
 }
-
-
 /*******************
  common m-p removed
 ******************/
-
-.sidebar-nav {
+.sidebar-nav{
     ul {
         margin: 0px;
         padding: 0px;
@@ -118,16 +108,12 @@ sidebar navigation
         }
     }
 }
-
 .collapse.in {
     display: block;
 }
-
-
 /*******************
 Down arrow
 ******************/
-
 .sidebar-nav .has-arrow {
     position: relative;
     &::after {
@@ -155,10 +141,12 @@ Down arrow
     }
 }
 
-.sidebar-nav .active>.has-arrow::after,
-.sidebar-nav li.selected>.has-arrow::after,
-.sidebar-nav li.active>.has-arrow::after,
-.sidebar-nav li>.has-arrow.active::after,
+
+/*.sidebar-nav .active > .has-arrow::after,*/
+
+/*.sidebar-nav li.selected > .has-arrow::after,*/
+.sidebar-nav li.active > .has-arrow::after,
+.sidebar-nav li > .has-arrow.active::after,
 .sidebar-nav .has-arrow[aria-expanded="true"]::after {
     -webkit-transform: rotate(-135deg) translate(0, -50%);
     -ms-transform: rotate(-135deg) translate(0, -50%);
@@ -170,25 +158,17 @@ Down arrow
 /*******************
 User Profile
 ******************/
-
-.user-profile {
+.user-profile{
     padding: 15px;
-    .user-content,
-    .user-name,
-    .user-email {
-        color: $theme-light;
+    
+    .user-content, .user-name, .user-email{
+        color:$theme-light;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
     }
 }
-
 .create-btn {
     height: 40px;
-    width: 94%;
-    background: $cyan;
-    text-align: left;
-}
-body{
-    background-color: $gray-50;
+    background: $dark;
 }

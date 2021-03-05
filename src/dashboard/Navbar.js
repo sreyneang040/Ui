@@ -1,53 +1,80 @@
-import {
-    FaFacebookMessenger,
-    FaSearch,
-    FaUser,
-    FaWallet
-} from "react-icons/fa";
-import { Dropdown, Image, Container, Form, Nav, Navbar } from 'react-bootstrap'
+
+import '../core/topbar/header.scss'
+import '../core/wave-effects/wave-effects.scss'
+import '../core/sidebar/sidebar.scss'
+import '../core/breadcrumb/breadcrumb.scss'
+import '../core/buttons/buttons.scss'
 import '../Admin.css'
+import SearchIcon from '@material-ui/icons/Search';
+import CloseIcon from '@material-ui/icons/Close';
+import PersonOutlineIcon from "@material-ui/icons/PersonOutline";
+import AccountBalanceWalletIcon from "@material-ui/icons/AccountBalanceWallet";
+import MailOutlineIcon from '@material-ui/icons/MailOutline';
+import { Dropdown } from "react-bootstrap";
+
 const Navbars = () => {
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark">
-        <Navbar.Brand href="#home">
-            <b class="logo-icon">
-                <Image src="/images/logo-light-icon.png" alt="homepage" class="light-logo" />
-            </b>
-            <span class="logo-text">
-                <Image src="/images/logo-light-text.png" class="light-logo" alt="homepage" />
-            </span>
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="mr-auto">
-                <a className="ml-5 "><FaSearch/></a>
-            </Nav>
-            <Nav>
-                <Nav.Link className="dropdownToggle">
-                    <Dropdown>
-                        <Dropdown.Toggle id="navbarDropdown" bg="danger">
-                            <Image src="/images/users/1.jpg" alt="user" className="rounded-circle  bg-dark" width="31" />
-                        </Dropdown.Toggle>
-                        <Dropdown.Menu>
-                            <Dropdown.Item href="#/action-1">
-                                <a class="dropdown-item" href=""><FaUser className="mr-3" />
-                                    My Profile</a>
-                            </Dropdown.Item>
-                            <Dropdown.Item href="#/action-2">
-                                <a class="dropdown-item" href="">< FaWallet className="mr-3" />
-                                My Balance</a>
-                            </Dropdown.Item>
-                            <Dropdown.Item href="#/action-3">
-                                <a class="dropdown-item" href="">< FaFacebookMessenger className="mr-3" />
-                                Inbox</a>
-                            </Dropdown.Item>
-                        </Dropdown.Menu>
+    <>
+        <div className="preloader">
+        <div className="lds-ripple">
+            <div className="lds-pos"></div>
+            <div className="lds-pos"></div>
+        </div>
+    </div>
+    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
+        data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+        <header className="topbar" data-navbarbg="skin5">
+            <nav className="navbar top-navbar navbar-expand-md navbar-dark">
+                <div className="navbar-header" data-logobg="skin5">
+                    <a className="navbar-brand" href="index.html">
+                        <b className="logo-icon">
+                            <img src="/images/logo-icon.png" alt="homepage" className="dark-logo" />
+                            <img src="/images/logo-light-icon.png" alt="homepage" className="light-logo" />
+                        </b>
+                        <span className="logo-text">
+                            <img src="/images/logo-text.png" alt="homepage" className="dark-logo" />
+                            <img src="/images/logo-light-text.png" className="light-logo" alt="homepage" />
+                        </span>
+                    </a>
+                    <a className="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)">
+                        <CloseIcon /></a>
+                </div>
+                <div className="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
+                    <ul className="navbar-nav float-start me-auto">
+                        <li className="nav-item search-box"> <a className="nav-link waves-effect waves-dark"
+                                href="javascript:void(0)"><SearchIcon /></a>
+                            <form className="app-search position-absolute">
+                                <input type="text" className="form-control" placeholder="Search &amp; enter"/> <a
+                                    className="srh-btn"><CloseIcon /></a>
+                            </form>
+                        </li>
+                    </ul>
+                    <ul className="navbar-nav float-end">
+                        <li className="nav-item dropdown">
                            
-                    </Dropdown>
-                </Nav.Link >
-            </Nav>
-        </Navbar.Collapse>
-    </Navbar>
+                            <Dropdown>
+                                    <Dropdown.Toggle className="text-dark bg-dark border border-0 borderDropdown float-end  ">
+                                        <img src="images/users/1.jpg" alt="users" className="rounded-circle" width="40"/>
+                                    </Dropdown.Toggle>
+                                    <Dropdown.Menu>
+                                        <Dropdown.Item href="javascript:void(0)">
+                                            <PersonOutlineIcon className="m-r-5 m-l-5" width="17" /> My Profile
+                                        </Dropdown.Item>
+                                        <Dropdown.Item href="javascript:void(0)">
+                                            <AccountBalanceWalletIcon className="m-r-5 m-l-5" width="17" /> My Balance
+                                        </Dropdown.Item>
+                                        <Dropdown.Item href="javascript:void(0)">
+                                            <MailOutlineIcon className="m-r-5 m-l-5" width="17" /> Inbox
+                                        </Dropdown.Item>
+                                    </Dropdown.Menu>
+                                </Dropdown>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        </div>
+    </>
     )
 }
 

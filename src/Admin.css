@@ -1,8 +1,27 @@
-.img-1 {
-    width: 30px;
-    border-radius: 50%;
+.bg-admin {
+  background: #eaeced;
 }
 
-.bg-admin {
-    background: #eaeced;
+.error {
+  margin-top: 60px;
+}
+.error-title {
+  font-size: 210px;
+  font-weight: 900;
+  text-shadow: 4px 4px 0 #fff, 6px 6px 0 #343a40;
+  line-height: 210px;
+  color: #f62d51 !important;
+}
+.blank{
+    /* padding: 20px; */
+    min-height: calc(108vh - 180px)
+}
+.app-search{
+    z-index: 110;
+    width: 100%;
+    top: -1px;
+    -webkit-box-shadow: 1px 0px 20px rgb(0 0 0 / 8%);
+    box-shadow: 1px 0px 20px rgb(0 0 0 / 8%);
+    display: none;
+    left: 0px;
 }

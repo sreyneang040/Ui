@@ -1,5 +1,4 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import logoHeader from '../images/logoHeader.PNG';
 import { Nav, Navbar, Container } from 'react-bootstrap';
 
 const navbar = () => {

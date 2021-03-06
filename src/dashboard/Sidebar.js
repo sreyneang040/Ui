@@ -9,56 +9,57 @@ import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import SettingsIcon from '@material-ui/icons/Settings';
 import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
 import LocalHospitalIcon from '@material-ui/icons/LocalHospital';
-import { Dropdown } from "react-bootstrap";
+import { Dropdown, Image } from "react-bootstrap";
 import '../Combine.scss'
+
 function Sidebar() {
     return (
         <aside className="left-sidebar" data-sidebarbg="skin6">
-            <div className="scroll-sidebar">
+            <div className="scroll-sidebar ml-3">
                 <nav className="sidebar-nav">
                     <ul id="sidebarnav">
                         <li>
                             <div className="user-profile d-flex no-block dropdown m-t-20">
                                 <div className="user-pic">
-                                    <img
+                                    <Image
                                         src="images/users/1.jpg"
                                         alt="users"
-                                        className="rounded-circle"
-                                        width="40"/>
+                                        className="rounded-circle mt-2"
+                                        width="40" />
                                 </div>
                                 <Dropdown>
-                                    <Dropdown.Toggle className="text-dark bg-white border border-0">
+                                    <Dropdown.Toggle className="text-dark bg-white text-muted border-0 pro-pic">
                                         <strong>Steve jobs</strong>
                                     </Dropdown.Toggle>
                                     <span className="op-5 user-email text-dark">varun@gmail.com</span>
                                     <Dropdown.Menu>
-                                        <Dropdown.Item href="javascript:void(0)">
-                                            <PersonOutlineIcon className="m-r-5 m-l-5" width="17" /> My Profile
+                                        <Dropdown.Item>
+                                            <PersonOutlineIcon className="m-r-5 m-2 m-l-5" width="17" /> My Profile
                                         </Dropdown.Item>
-                                        <Dropdown.Item href="javascript:void(0)">
-                                            <AccountBalanceWalletIcon className="m-r-5 m-l-5" width="17" /> My Balance
+                                        <Dropdown.Item>
+                                            <AccountBalanceWalletIcon className="m-r-5 m-2 m-l-5" width="17" /> My Balance
                                         </Dropdown.Item>
-                                        <Dropdown.Item href="javascript:void(0)">
-                                            <MailOutlineIcon className="m-r-5 m-l-5" width="17" /> Inbox
+                                        <Dropdown.Item>
+                                            <MailOutlineIcon className="m-r-5 m-2 m-l-5" width="17" /> Inbox
                                         </Dropdown.Item>
-                                        <Dropdown.Item href="javascript:void(0)">
-                                            <SettingsIcon className="m-r-5 m-l-5" width="17" /> Account Setting
+                                        <Dropdown.Item>
+                                            <SettingsIcon className="m-r-5 m-2 m-l-5" width="17" /> Account Setting
                                         </Dropdown.Item>
-                                        <Dropdown.Item href="javascript:void(0)">
-                                            <PowerSettingsNewIcon className="m-r-5 m-l-5" width="17" /> Account Setting
+                                        <Dropdown.Item>
+                                            <PowerSettingsNewIcon className="m-r-5 m-2 m-l-5" width="17" /> Account Setting
                                         </Dropdown.Item>
                                     </Dropdown.Menu>
                                 </Dropdown>
                             </div>
                         </li>
-                        <li className="p-15 m-t-10">
-                            <a href="javascript:void(0)"
-                                className="btn create-btn text-white">
+                        <li className="p-15 m-t-10 ml-2 mt-4">
+                            <a
+                                className="btn text-left create-btn text-white">
                                 <LocalHospitalIcon />{" "}
-                                <span className="hide-menu m-l-5">Create New</span>{" "}
+                                <span className="hide-menu m-l-5 ">Create New</span>{" "}
                             </a>
                         </li>
-                        <li className="sidebar-item">
+                        <li className="sidebar-item mt-4">
                             {" "}
                             <a className="sidebar-link waves-effect waves-dark sidebar-link"
                                 href="/admin"
@@ -87,7 +88,7 @@ function Sidebar() {
                         <li className="sidebar-item">
                             {" "}
                             <a className="sidebar-link waves-effect waves-dark sidebar-link"
-                                href="icon-material.html"
+                                href="/icons"
                                 aria-expanded="false">
                                 <FaceIcon className="text-secondary" />
                                 <span className="hide-menu ml-2">Icon</span>
@@ -96,7 +97,7 @@ function Sidebar() {
                         <li className="sidebar-item">
                             {" "}
                             <a className="sidebar-link waves-effect waves-dark sidebar-link"
-                                href="starter-kit.html"
+                                href="/blank"
                                 aria-expanded="false">
                                 <InsertDriveFileIcon className="text-secondary" />
                                 <span className="hide-menu ml-2">Blank</span>
@@ -105,7 +106,7 @@ function Sidebar() {
                         <li className="sidebar-item">
                             {" "}
                             <a className="sidebar-link waves-effect waves-dark sidebar-link"
-                                href="error-404.html"
+                                href="/error"
                                 aria-expanded="false">
                                 <ReportProblemIcon className="text-secondary" />
                                 <span className="hide-menu ml-2">404</span>

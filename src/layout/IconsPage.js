@@ -1,16 +1,16 @@
 import Navbar from '../dashboard/Navbar'
 import Sidebar from '../dashboard/Sidebar'
 import Footer from '../dashboard/Footer'
-import Profile from '../subSidebar/Profile'
-const ProfilePage = () => {
+import Icons from '../subSidebar/Icons'
+const IconsPage = () => {
     return (
         <div className="bg-admin">
         <Navbar />
         <Sidebar />
-        <Profile />
+        <Icons />
         <Footer />
        </div>
     )
 }
 
-export default ProfilePage
+export default IconsPage

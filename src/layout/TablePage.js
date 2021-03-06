@@ -5,12 +5,13 @@ import Table from '../subSidebar/Table'
 
 const TablePage = () => {
     return (
-        <>
+        <div className="bg-admin">
+        
         <Navbar />
         <Sidebar />
         <Table />
         <Footer />
-       </>
+       </div>
     )
 }
 

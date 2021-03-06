@@ -1,14 +1,39 @@
 
+import { Container,Breadcrumb, Row, Col } from 'react-bootstrap'
 
 const Table = () => {
     return (
+<>
+<div className="d-flex ">
+        <Container>
+          <h4 className ="mt-3 ml-3">Basic Table</h4>
+          <Breadcrumb className="">
+            <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
+            <Breadcrumb.Item
+              active
+              href="">
+              Library
+            </Breadcrumb.Item>
+          </Breadcrumb>
+        </Container>
+        <div className="text-end mt-3 mr-3" fluid={true}>
+          <a
+            href="https://www.wrappixel.com/templates/xtremeadmin/"
+            class="btn btn-danger text-white"
+            target="_blank"
+          >
+            Upgrade to Pro
+          </a>
+        </div>
+      </div>
+      <Container fluid={true}>
 
-        <div class="container">
         <div class="page-wrapper">
         <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
         data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
-                <div class="row">
-                    <div class="col-12">
+                <Row>
+                    <Col md={2}></Col>
+                    <Col md={10}>
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Default Table</h4>
@@ -88,8 +113,9 @@ const Table = () => {
                                 </table>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12">
+                    </Col>
+                    <Col md={2}></Col>
+                    <Col md={10}>
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Table Header</h4>
@@ -129,8 +155,9 @@ const Table = () => {
                                 </table>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12">
+                    </Col>
+                    <Col md={2}></Col>
+                    <Col md={10}>
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Striped rows</h4>
@@ -170,8 +197,9 @@ const Table = () => {
                                 </table>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12">
+                    </Col>
+                    <Col md={2}></Col>
+                    <Col md={10}>
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Boredered Table</h4>
@@ -210,8 +238,9 @@ const Table = () => {
                                 </table>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12">
+                    </Col>
+                    <Col md={2}></Col>
+                    <Col md={10}>
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Hoverable Rows</h4>
@@ -250,8 +279,9 @@ const Table = () => {
                                 </table>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12">
+                    </Col>
+                    <Col md={2}></Col>
+                    <Col md={10}>
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Responsive tables</h4>
@@ -382,11 +412,13 @@ const Table = () => {
                                 </table>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </Col>
+                </Row>
             </div>
             </div>
-            </div>
+      </Container>
+
+            </>
     )
 }
 

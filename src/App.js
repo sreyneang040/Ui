@@ -14,8 +14,8 @@ const App = () => {
     <div>
          <Router>
           <Switch>  
-            <Route path="/admin" exact component={AdminLayout} />
             <Route  path="/" exact component={ClientLayout} />
+            <Route path="/admin" exact component={AdminLayout} />
             <Route  path="/profile" exact component={ProfilePage} />
             <Route  path="/table" exact component={TablePage} />
             <Route  path="/error" exact component={ErrorPage} />

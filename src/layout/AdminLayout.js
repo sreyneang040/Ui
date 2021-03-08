@@ -1,5 +1,4 @@
 import Navbar from '../dashboard/Navbar'
-import Sidebar from '../dashboard/Sidebar'
 import SaleSummaryAndFeed from '../dashboard/SaleSummaryAndFeed'
 import RecentCommentAndTempGuide from '../dashboard/RecentCommentAndTempGuide'
 import TopSellingProduct from '../dashboard/TopSellingProduct'
@@ -9,8 +8,8 @@ const AdminLayout = () => {
     return (
         <div className="bg-admin">
             <Navbar />
+            {/* <Sidebar /> */}
             <Breadcrumbs />
-            <Sidebar />
             <SaleSummaryAndFeed />
             <TopSellingProduct />
             <RecentCommentAndTempGuide />

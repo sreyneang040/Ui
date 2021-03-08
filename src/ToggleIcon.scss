@@ -1,0 +1,108 @@
+.MenuToggle {
+    $line-color: #1f4772;
+    $line-height: 10%;
+    $animation-speed: 300ms;
+    $button-width: 100px;
+    $button-height: 80px;
+    position: relative;
+    width: $button-width;
+    height: $button-height;
+    background: transparent;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    &:before,
+    &:after,
+    div {
+        position: absolute;
+        width: 100%;
+        height: $line-height;
+        background: $line-color;
+        transition: all $animation-speed;
+    }
+    &:before {
+        content: '';
+        top: 0;
+    }
+    &:after {
+        content: '';
+        bottom: 0;
+    }
+    div {
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all $animation-speed / 2;
+        opacity: 1;
+    }
+    &--active {
+        &:before {
+            top: 50%;
+            transform: translateY(-50%) rotateZ(135deg);
+        }
+        &:after {
+            bottom: 50%;
+            transform: translateY(50%) rotateZ(45deg);
+        }
+        div {
+            opacity: 0;
+        }
+    }
+}
+
+// COMPONENT UNREALTED STYLES FOR DEMO
+@import url('https://fonts.googleapis.com/css?family=Lato:100');
+.scene {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(-180deg, #261957 0%, #158b9b 100%);
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 370px;
+}
+
+.panel {
+    position: relative;
+    display: inline-block;
+    width: 170px;
+    height: 170px;
+    vertical-align: top;
+    text-align: left;
+    background: white;
+    >div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.title {
+    display: inline-block;
+    width: 150px;
+    margin-left: 30px;
+    vertical-align: top;
+    font-size: 25px;
+    line-height: 32px;
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    color: white;
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 100%;
+    }
+    .title {
+        width: 80%;
+        margin: 30px 0 0 0;
+        text-align: center;
+    }
+}

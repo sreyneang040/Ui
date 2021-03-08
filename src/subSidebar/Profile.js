@@ -132,9 +132,7 @@ const Profile = () => {
                                     </Form>
                                 </Card.Body>
                             </Card>
-
                         </Col>
-
                     </Row>
                 </div>
             </Container>

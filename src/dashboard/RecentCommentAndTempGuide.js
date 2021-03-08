@@ -1,4 +1,4 @@
-import { Container, Col, Row, Card } from 'react-bootstrap'
+import { Container, Col, Row, Card , Table} from 'react-bootstrap'
 import WbSunnyIcon from '@material-ui/icons/WbSunny';
 import CloudQueueIcon from '@material-ui/icons/CloudQueue';
 import CreateIcon from '@material-ui/icons/Create';
@@ -83,7 +83,7 @@ const RecentCommentAndTempGuide = () => {
                                         <h3 class="m-b-0">Saturday</h3><small>Ahmedabad, India</small>
                                     </div>
                                 </div>
-                                <table class="table no-border mini-table m-t-20 mt-5">
+                                <Table class="table no-border mini-table m-t-20 mt-5">
                                     <tbody>
                                         <tr>
                                             <td class="text-muted">Wind</td>
@@ -102,7 +102,7 @@ const RecentCommentAndTempGuide = () => {
                                             <td class="font-medium">78%</td>
                                         </tr>
                                     </tbody>
-                                </table>
+                                </Table>
                                 <ul class="row list-style-none text-center m-t-30 mt-3">
                                     <li class="col-3">
                                         <h4 class="text-primary"><WbSunnyIcon /></h4>
